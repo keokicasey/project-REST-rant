@@ -23,17 +23,6 @@ function show(data) {
     });
   }
 
-
-
- 
-   
-
-
-
-
-
-
-
   // if no rating exists...
   let rating = <div className='inactive'>Not yet rated</div>;
   let stars = "";
@@ -56,6 +45,7 @@ function show(data) {
       <main>
         <div className='row'>
           <div className='col-sm-6'>
+            <h1>{data.place.name}</h1>
             <img src={data.place.pic} alt={data.place.name} />
             <div>
               Located in {data.place.city}, {data.place.state}
